@@ -1,1 +1,9 @@
 <h1>Add Subject</h1>
+
+<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_table }}
+  <input type="submit" value="Add">
+</form>
+
+<p><a href="{% url 'base:index' %}">Back</a></p>

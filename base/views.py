@@ -48,3 +48,6 @@ def student(request):
 def teacher(request):
   
   return render(request, "base/teacher_page.html")
+
+class BookView(View):
+  pass

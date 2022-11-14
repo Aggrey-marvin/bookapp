@@ -3,7 +3,7 @@
 {% if subjects %}
 <ul>
   {% for subject in subjects %}
-    <li>{{ subject.subjectName }} (
+    <li><a href="{% url 'base:books' %}"> {{ subject.subjectName }}</a> (
       <a href="{% url 'base:subjectUpdate' subject.id %}">Update</a> | 
       <a href="{% url 'base:subjectDelete' subject.id %}">Delete</a>)</li>
   {% endfor %}
